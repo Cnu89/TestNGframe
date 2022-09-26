@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/SrinivasReddy Pakala/IdeaProjects/Testngframework">
+        <classes>
+            <class name="TestNG.TestNGMain">
+                <methods>
+                    <include name="Amazonsearfirstchelement"/>
+                    <include name="Handlealertpopups"/>
+                    <include name="Dropdownshandling"/>
+                    <include name="Angulardropdownhandling"/>
+                    <include name="Vehicleassment"/>
+                    <include name="Myntraapp"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
