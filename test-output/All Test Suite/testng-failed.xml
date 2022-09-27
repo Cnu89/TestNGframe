@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]">
+  <test thread-count="5" name="C:/Users/SrinivasReddy Pakala/IdeaProjects/Testngframework(failed)">
+    <classes>
+      <class name="TestNG.TestNGannotations">
+        <methods>
+          <include name="Method2"/>
+          <include name="Method9"/>
+          <include name="Method5"/>
+          <include name="Method8"/>
+          <include name="Method3"/>
+          <include name="Method10"/>
+          <include name="Method6"/>
+          <include name="Method1"/>
+          <include name="Method4"/>
+        </methods>
+      </class> <!-- TestNG.TestNGannotations -->
+    </classes>
+  </test> <!-- C:/Users/SrinivasReddy Pakala/IdeaProjects/Testngframework(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

@@ -1,9 +1,12 @@
 package TestNG;
 
+import Browserlaunch.Readconfigproperties;
 import Browserlaunch.TestNGMethods;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.*;
+
+import java.io.IOException;
 
 public class TestNGMain {
     TestNGMethods obj=new TestNGMethods();
@@ -14,7 +17,6 @@ public class TestNGMain {
 
     @Test
     public void Amazonsearfirstchelement(){
-
 
         obj.Openurl("https://www.amazon.in");
 
@@ -46,11 +48,14 @@ public class TestNGMain {
     }
 
     @Test
-    public void Dropdownshandling() {
+    public void Dropdownshandling() throws IOException {
 
-        obj.Openurl("https://www.opencart.com/");
-        obj.Waituntilclickable(By.xpath("//a[text()='Register' and @class]"));
-        obj.Clickoptions(By.xpath("//a[text()='Register' and @class]"));
+        String Url= Readconfigproperties.Fetchproperties("ApplicationUrl");
+        String Registerxpath=Readconfigproperties.Fetchproperties("Registerpath");
+
+        obj.Openurl(Url);
+        obj.Waituntilclickable(By.xpath(Registerxpath));
+        obj.Clickoptions(By.xpath(Registerxpath));
         obj.Selectbytext(By.xpath("//select[@id='input-country']"), "India");
         obj.Close();
     }

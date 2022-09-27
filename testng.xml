@@ -3,6 +3,14 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="C:/Users/SrinivasReddy Pakala/IdeaProjects/Testngframework">
         <classes>
+            <class name="FileHandling.Readdata">
+                <methods>
+                    <include name="Textfileread"/>
+                    <include name="Readtextusingbuff"/>
+                    <include name="Writedatausingfilewiter"/>
+                    <include name="Writedatausingbufferwiter"/>
+                </methods>
+            </class>
             <class name="TestNG.TestNGMain">
                 <methods>
                     <include name="Amazonsearfirstchelement"/>
@@ -11,6 +19,13 @@
                     <include name="Angulardropdownhandling"/>
                     <include name="Vehicleassment"/>
                     <include name="Myntraapp"/>
+                </methods>
+            </class>
+            <class name="TestNG.TestNGannotations">
+                <methods>
+                    <include name="Method5"/>
+                    <include name="Method7"/>
+                    <include name="Amethod"/>
                 </methods>
             </class>
         </classes>
